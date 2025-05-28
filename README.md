@@ -1,86 +1,53 @@
-React Admin Panel – Scraped Data Viewer
-🚀 Project Overview
-This is a React-based admin dashboard designed to view and manage scraped data from public websites. The interface is simple, responsive, and allows triggering the scraper and viewing results in a dynamic table.
+📊 Cloud-Based Web Admin Panel with Scraped Data Viewer
 
-🧠 Features
-🌐 Cloud-hosted admin panel
+---
 
-📄 Table to view scraped data with pagination and sorting
+🧩 Project Description
+A full-stack web application featuring an admin panel that allows authenticated users to:
+-Scrape data from a public website (e.g., job listings, news headlines)
+-Store the data in a cloud database
+-View the data in a sortable, paginated table
+-Trigger scraping on-demand using a "Scrape Now" button
 
-🔁 “Scrape Now” button to trigger backend scraper
+---
 
-🔐 Simple authentication (dummy or Firebase)
+📦 Tech Stack
+🔹 Frontend
+React (with TypeScript template)
+Axios (API communication)
+Bootstrap or Tailwind CSS (optional for styling)
 
-☁️ Integrated with cloud database (MongoDB Atlas / Firebase Firestore)
+🔹 Backend
+Node.js + Express
+Scraping using Cheerio (or Puppeteer)
+REST API for frontend interaction
 
-🧼 Clean and modular React codebase
+🔹 Database
+MongoDB Atlas or Firebase Firestore
 
-🛠️ Tech Stack
-Layer	Technology
-Frontend	React (with TypeScript template)
-UI Library	Bootstrap / Material-UI (optional)
-Backend	Node.js + Express (separate repo)
-Scraper	Cheerio / Puppeteer
-Database	MongoDB Atlas / Firebase Firestore
-Deployment	Vercel (frontend) + Railway/Render (backend)
+🔹 Authentication
+Dummy login (email/password) or Firebase Authentication
 
-📦 Installation
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/react-admin-scraper-panel.git
-cd react-admin-scraper-panel
-2. Install Dependencies
-bash
-Copy
-Edit
-npm install
-3. Start the Development Server
-bash
-Copy
-Edit
-npm start
-The app will run at http://localhost:3000.
+🔹 Deployment
+Frontend: Vercel
+Backend: Render or Railway
 
-🌍 Project Structure
-bash
-Copy
-Edit
-/public           → Static assets
-/src
-  /components     → Reusable UI components
-  /pages          → Page-level components (Dashboard, Login)
-  /services       → API interaction and helpers
-  App.tsx         → Root component
-  index.tsx       → Entry point
-⚙️ Backend Integration
-This project connects to a backend (Node.js/Express) that:
+---
 
-Runs a web scraper
-
-Serves scraped data via REST API
-
-Stores data in MongoDB Atlas or Firebase
-
-Triggering the “Scrape Now” button sends a request to the backend to fetch and store fresh data.
-
-Backend repo: backend-scraper-api
-
-🔐 Authentication
-You can use:
-
-Dummy login (hardcoded credentials)
-
-Firebase Authentication for real login/signup
-
-🚀 Deployment
-Frontend:
-Deploy using Vercel:
-
-bash
-Copy
-Edit
-vercel --prod
-Backend:
-Deploy using Railway or Render
+📁 Project Structure
+/fullstack-admin-panel
+│
+├── /client                 # React frontend
+│   ├── /src
+│   └── package.json
+│
+├── /server                 # Express backend
+│   ├── /routes
+│   ├── /scraper
+│   ├── /models
+│   ├── /controllers
+│   └── server.js
+│
+├── .env                    # Environment variables
+├── README.md
+└── .gitignore
