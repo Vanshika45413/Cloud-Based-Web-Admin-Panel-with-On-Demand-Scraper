@@ -1,5 +1,5 @@
 📊 Cloud-Based Web Admin Panel with Scraped Data Viewer
-
+-----
 ---
 
 🧩 Project Description
