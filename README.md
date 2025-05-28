@@ -12,34 +12,31 @@ A full-stack web application featuring an admin panel that allows authenticated 
 ---
 
 📦 Tech Stack
+---
 🔹 Frontend:
 --
-React (with TypeScript template)
-Axios (API communication)
-Bootstrap or Tailwind CSS (optional for styling)
+React (with TypeScript template), Axios (API communication), Tailwind CSS
 
 🔹 Backend:
 --
-Node.js + Express
-Scraping using Cheerio (or Puppeteer)
-REST API for frontend interaction
+Node.js + Express, Scraping using Cheerio , REST API for frontend interaction
 
 🔹 Database:
 --
-MongoDB Atlas or Firebase Firestore
+MongoDB Atlas, Firebase Firestore
 
 🔹 Authentication:
 --
-Dummy login (email/password) or Firebase Authentication
+Dummy login (email/password)
 
 🔹 Deployment:
 --
-Frontend: Vercel
-Backend: Render or Railway
+Frontend: Vercel ,Backend: Render or Railway
 
 ---
 
 📁 Project Structure
+--
 /fullstack-admin-panel
 │
 ├── /client                 # React frontend
